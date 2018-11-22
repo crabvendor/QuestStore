@@ -1,6 +1,12 @@
+:root {
+    --content-width: 40%; 
+    --min-content-width: 400px;  
+}
+
+/* LOGIN PAGE */
+
 body {
-    height: 60vh;
-    font-family: LeagueSpartan-Bold, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     background: url(background.png);
     background-position: center;
     background-size: cover;  
@@ -11,7 +17,6 @@ body {
     position: absolute;
     top: 5%;
     background-color: #F4F3F1;
-    /* transform: scale(1.2) */
 }
 
 .login-screen {
@@ -61,3 +66,105 @@ body {
     font-size: 13px;
 }
 
+/* DASHBOARD */
+
+.top-panel {
+    margin-bottom: 10px; 
+}
+
+.top-bar {
+    background-color: white;
+    width: var(--content-width);
+    min-width: var(--min-content-width);
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0px auto 0px auto;
+    padding-top: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#bar-logo {
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.top-bar p {
+    margin: 0 5px 0 5px;
+}
+
+.main-menu {
+    margin: 0px auto 0px auto;
+
+}
+
+.navigation-bar {
+    width: var(--content-width);
+    min-width: var(--min-content-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    list-style: none;
+    border: 2px;
+    min-width: 400px;
+}
+
+.navigation-bar li {
+    width: 20%;
+}
+
+.navigation-bar a {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;    
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(122, 122, 122);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    pointer-events: none;
+}
+
+.active-button {
+    background-color: rgb(122, 122, 122);
+    pointer-events: all;
+}
+
+#left-button {
+    border-radius: 0 0 0 10px;
+    border-left: 0;
+}
+
+#right-button {
+    border-radius: 0 0 10px 0;
+}
+
+.active-button:hover {
+    background-color: aqua;
+}
+
+#dashboard {
+    margin: 50px;
+}
+
+.content {
+    width: var(--content-width);
+    min-width: var(--min-content-width);
+    height: 700px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto 0 auto;    
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+}
